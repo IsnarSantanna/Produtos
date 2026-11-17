@@ -6,7 +6,6 @@ Página de vendas oficial do **Cabo Tech Threeway Universal Red**, desenvolvida 
 
 ## 📱 Demonstração do Projeto
 
-> *Dica: Insira um print da tela da sua página aqui.*
 ![Print da Página de Vendas](assets/img/print-do-site.png)
 
 ---
