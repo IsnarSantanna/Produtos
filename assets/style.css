@@ -148,3 +148,138 @@ button:hover {
         height: 220px; /* Altura compacta para celular */
     }
 }
+/* =========================================
+   ESTILO DA CAIXA DE PREÇO
+   ========================================= */
+.preco-box {
+    background: linear-gradient(145deg, #1c1c1c, #141414);
+    border: 1px solid #ff3030;
+    border-radius: 16px;
+    padding: 20px 24px;
+    margin: 30px auto;
+    max-width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(255, 48, 48, 0.15);
+}
+
+.preco-etiqueta {
+    display: inline-block;
+    background-color: #ff3030;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.preco-valor {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #ffffff;
+    font-weight: 800;
+    line-height: 1;
+    margin: 8px 0;
+}
+
+.preco-valor .moeda {
+    font-size: 1.2rem;
+    margin-top: 6px;
+    margin-right: 4px;
+    color: #ff6666;
+}
+
+.preco-valor .reais {
+    font-size: 3.6rem;
+    letter-spacing: -2px;
+}
+
+.preco-valor .centavos {
+    font-size: 1.4rem;
+    margin-top: 6px;
+    color: #cccccc;
+}
+
+.preco-detalhe {
+    display: block;
+    font-size: 0.85rem;
+    color: #aaaaaa;
+    margin-top: 8px;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 400px) {
+    .preco-valor .reais {
+        font-size: 3rem;
+    }
+}/* =========================================
+   ESTILO DA CAIXA DE PREÇO
+   ========================================= */
+.preco-box {
+    background: linear-gradient(145deg, #1c1c1c, #141414);
+    border: 1px solid #ff3030;
+    border-radius: 16px;
+    padding: 20px 24px;
+    margin: 30px auto;
+    max-width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(255, 48, 48, 0.15);
+}
+
+.preco-etiqueta {
+    display: inline-block;
+    background-color: #ff3030;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.preco-valor {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #ffffff;
+    font-weight: 800;
+    line-height: 1;
+    margin: 8px 0;
+}
+
+.preco-valor .moeda {
+    font-size: 1.2rem;
+    margin-top: 6px;
+    margin-right: 4px;
+    color: #ff6666;
+}
+
+.preco-valor .reais {
+    font-size: 3.6rem;
+    letter-spacing: -2px;
+}
+
+.preco-valor .centavos {
+    font-size: 1.4rem;
+    margin-top: 6px;
+    color: #cccccc;
+}
+
+.preco-detalhe {
+    display: block;
+    font-size: 0.85rem;
+    color: #aaaaaa;
+    margin-top: 8px;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 400px) {
+    .preco-valor .reais {
+        font-size: 3rem;
+    }
+}
