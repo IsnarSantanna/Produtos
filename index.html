@@ -1,64 +1,205 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IsnarSantanna Home</title>
-    <link rel="stylesheet" href="assets/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isnar Motorista - Pagamento Rápido</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #131b3a 0%, #070a17 100%);
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(18, 24, 48, 0.95);
+      border: 2px solid #e61919;
+      border-radius: 18px;
+      box-shadow: 0 0 25px rgba(230, 25, 25, 0.35);
+      max-width: 400px;
+      width: 100%;
+      padding: 26px 22px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e61919;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 30px;
+      font-weight: 800;
+      margin-bottom: 6px;
+      
+    }
+
+    .price {
+      font-size: 38px;
+      font-weight: 900;
+      color: #ffd000;
+      margin-bottom: 22px;
+      text-shadow: 0 2px 10px rgba(255, 208, 0, 0.25);
+    }
+
+    .section-box {
+      background: #0d1226;
+      border: 1px solid #28335e;
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #fcfafb;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .pix-key-display {
+      background: #070a17;
+      border: 1px dashed #32bcad;
+      color: #32bcad;
+      font-family: monospace;
+      font-size: 14px;
+      padding: 10px;
+      border-radius: 8px;
+      word-break: break-all;
+      margin-bottom: 12px;
+      user-select: all;
+    }
+
+    .btn {
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      padding: 15px;
+      font-size: 16px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform 0.1s ease, opacity 0.2s ease;
+      display: block;
+      text-decoration: none;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .btn-pix {
+      background: #32bcad;
+      color: #061c19;
+    }
+
+    .btn-pix.copied {
+      background: #22c55e;
+      color: #ffffff;
+    }
+
+    .btn-card {
+      background: #009ee3;
+      color: #ffffff;
+    }
+
+    .footer-note {
+      font-size: 13px;
+      color: #cbd5e1;
+      margin-top: 8px;
+      line-height: 1.4;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>CABO TECH THREEWAY UNIVERSAL RED</h1>
-        <p>Praticidade: Um cabo, 3 conexões!</p>
-    </header>
-
+  <div class="card">
+    <h1>Isnar Motorista</h1>
+    <!-- BLOCO 1: PIX COPIA E COLA -->
+     <br><br><br>
+    <div class="section-box">
+      <br>
+      <div class="section-title">💠 Chave Pix Telefone 💠</div>
+      <br>
+      <!-- TROQUE O TEXTO ABAIXO PELA SUA CHAVE PIX (Celular, E-mail, CPF ou Aleatória) -->
+      <div class="pix-key-display" id="pixKey">11942343364</div>
+      <button class="btn btn-pix" id="copyBtn" onclick="copiarPix()">
+        Copiar Chave Pix
+      </button>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <h1>CABO TECH THREEWAY UNIVERSAL RED</h1>
+    <div class="price">R$ 34,90</div>
+    <span class="badge">Pronta Entrega no Carro</span>
+    <br>
+    <br>
     
- <main>
-    <h2>Seu celular sempre carregado!</h2>
-
-    <div class="produto">
-        <div class="imagem-produto">
-            <img src="assets/img/cabovermelho.png" alt="CABO TECH THREEWAY UNIVERSAL RED">
-        </div>
+    <!-- BLOCO 2: CARTÃO / LINK MERCADO PAGO -->
+    <div class="section-box">
+      <div class="section-title">💳 Pagar com Cartão 1x <br>ou<br> Pix Mercado Pago</div>
+      
+      <!-- TROQUE O "#" PELO SEU LINK DE PAGAMENTO DO MERCADO PAGO -->
+       <br>
+      <a href="https://mpago.la/2N6aJ5M" class="btn btn-card" target="_blank" rel="noopener noreferrer">
+        Pagar no Mercado Pago
+      </a>
     </div>
 
-    <div class="descricao">
-    <h3>Informações:</h3>
+    <p class="footer-note">
+      ✅ Após pagar, mostre o comprovante ao motorista para retirar seu cabo lacrado.
+    </p>
+    <br><br>
+  </div>
 
-    <ul>
-        <li>✓ Compatível com todos dispositivos atuais!</li>
-        <li>✓ Iluminação LED vermelha com tom suave</li>
-        <li>✓ Prático para carregar qualquer produto atual do mercado!</li>
-        <li>✓ Ideal para carregar no dia a dia!</li>
-        <li>✓ Carregamento rapido: 5A !</li>
-        <li>✓ Carrega tambem acessorios: fone bluetooth,powerbank e etc!</li>
-    </ul>
- </div>
+  <script>
+    function copiarPix() {
+      const chavePix = document.getElementById("pixKey").innerText.trim();
+      const botao = document.getElementById("copyBtn");
 
-    <div class="preco-box">
-    <span class="preco-etiqueta">Oferta Especial</span>
-    <div class="preco-valor">
-        <span class="moeda">R$</span>
-        <span class="reais">34</span>
-        <span class="centavos">,90</span>
-    </div>
-    <span class="preco-detalhe">À vista no Pix ou Cartão Credito / Debito</span>
-</div>
+      navigator.clipboard.writeText(chavePix).then(() => {
+        botao.innerText = "✓ Chave Pix Copiada!";
+        botao.classList.add("copied");
 
-    <p class="chamada">Gostou do cabo ? Leve o seu para casa!</p>
+        setTimeout(() => {
+          botao.innerText = "Copiar Chave Pix";
+          botao.classList.remove("copied");
+        }, 3000);
+      }).catch(() => {
+        // Fallback para navegadores antigos
+        const tempInput = document.createElement("input");
+        tempInput.value = chavePix;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
 
-    <a href="https://mpago.la/2N6aJ5M" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
-            <button type="button">CLIQUE AQUI E PAGUE AGORA!</button>
-        </a>
+        botao.innerText = "✓ Chave Pix Copiada!";
+        botao.classList.add("copied");
+      });
+    }
+  </script>
 
-  <p class="aviso">Pagamento seguro pelo Mercado Pago.</p>
-
-
- </main>
-
-
-    <script src="assets/script.js"></script>
 </body>
 </html>
